@@ -1,6 +1,6 @@
-describe('Circle', () => {
-  it('should have a radius of 10', () => {
-    const circle = new Circle();
-    expect(circle.radius()).toBe(10)
+describe('A note', () => {
+  it('should have text', () => {
+    const note = new Note("This is my text for my note");
+    expect(note.noteText()).toBe("This is my text for my note")
   })
 })
