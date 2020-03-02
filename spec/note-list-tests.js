@@ -1,8 +1,8 @@
 describe('A note list', () => {
-  it('should store notes in an array', () => {
+  it('should be able to accept a note', () => {
     noteOne = new Note("First note");
-    noteTwo = new Note("Second note")
-    const noteList = new NoteList([noteOne, noteTwo])
+    const noteList = new NoteList();
+    
     expect(noteList.showList()).toBe([noteOne, noteTwo])
   })
 })
