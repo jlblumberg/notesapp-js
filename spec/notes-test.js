@@ -4,3 +4,8 @@
 // };
 
 // testCircleRadiusDefaultsTo10();
+
+// function testCircleRadiusDefaultsTo10() {
+//   var circle = ...
+//   expect(circle.radius).toBe()
+// }
