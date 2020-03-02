@@ -1,4 +1,11 @@
+const describe = (description, fn) => {
+  console.log(description)
+  fn()
+}
 
+const it = (message, fn) => describe(' ' + message + fn)
+
+const expect = (expectation) => matcher(expectation)
 
 const assertion = {
   isTrue: function(assertionToCheck) {
