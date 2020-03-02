@@ -5,7 +5,9 @@
 
 // testCircleRadiusDefaultsTo10();
 
-// function testCircleRadiusDefaultsTo10() {
-//   var circle = ...
-//   expect(circle.radius).toBe()
-// }
+describe('Circle', () => {
+  it('should have a radius of 10', () => {
+    const circle = new Circle();
+    expect(circle.radius()).toBe(10)
+  })
+})

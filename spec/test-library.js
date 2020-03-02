@@ -3,7 +3,19 @@ const describe = (description, fn) => {
   fn()
 }
 
-const it = (message, fn) => describe(' ' + message + fn)
+const it = (message, fn) => describe(' ' + message, fn)
+
+const matcher = (expectation) => ({
+  toBe: function (assertionToCheck) {
+    if (expectation === assertionToCheck) {
+      console.log('Pass')
+      return true
+    } else {
+      console.log('Fail')
+      return false
+    }
+  }
+});
 
 const expect = (expectation) => matcher(expectation)
 
@@ -20,14 +32,3 @@ const assertion = {
   },
 };
 
-const matcher = (expectation) => ({
-  toBe: function (assertionToCheck) {
-    if (expectation === assertionToCheck) {
-      console.log('Pass')
-      return true
-    } else {
-      console.log('Fail')
-      return false
-    }
-  }
-});
