@@ -2,7 +2,7 @@ var Note = function(text) {
   this.text = text;
 }
 
-Note.prototype = (function() {
+Note.prototype = (function() {  
   
   function returnText() {
     return this.text;
