@@ -1,8 +1,6 @@
 describe('A note list', () => {
-  it('should be able to accept a note', () => {
-    noteOne = new Note("First note");
+  it('has a method show list which returns the notes', () => {
     const noteList = new NoteList();
-    
-    expect(noteList.showList()).toBe([noteOne, noteTwo])
+    expect(Array.isArray(noteList.showNotes())).toBe(true)
   })
 })
