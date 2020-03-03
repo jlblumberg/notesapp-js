@@ -24,8 +24,8 @@ describe('A note list view', function() {
     testNoteList.newNote("This is my first note"); // add three notes to it
     testNoteList.newNote("This is my second note");
     testNoteList.newNote("This is my third note");
-    noteListView = new NoteListView(testNoteList); // 
-    expect(noteListView.returnHtml()).toBe("<ul><li><div>This is my first note</div></li><li><div>This is my second note</div></li><li><div>This is my third note</div></li></ul>")
+    noteListView = new NoteListView(testNoteList);
+    expect(noteListView.returnHtml()).toBe("<ul><li><div>This is my first note</div></li><li><div>This is my second note</div></li><li><div>This is my third note</div></li></ul>");
   });
 
 });
