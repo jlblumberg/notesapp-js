@@ -9,7 +9,7 @@ Note.prototype = (function() {
   }
 
   return {
-    noteText: returnText
+    returnText
   };
 
 })();
