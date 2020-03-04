@@ -17,6 +17,7 @@ NoteController.prototype = (function() {
 
 })();
 
-// noteList = new NoteList();
-// controller = new NoteController(noteList);
-// controller.getHtmlAndInsertInApp();
+// run the new functions
+noteList = new NoteList();
+noteController = new NoteController(noteList);
+noteController.getHtmlAndInsertInApp();
