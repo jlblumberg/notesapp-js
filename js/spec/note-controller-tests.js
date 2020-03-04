@@ -5,7 +5,7 @@ describe('A Note Controller', function() {
     noteController = new NoteController(noteList); // pass it to controller
     noteController.getHtmlAndInsertInApp(); // insert note content into div
     resultantText = document.getElementById("app").innerHTML;
-    expect(resultantText).toBe("<ul><li><div>Favourite drink: seltzer</div></li></ul>")
+    expect(resultantText).toBe("<ul><li><div>Favourite drink: sel...</div></li></ul>")
   });
 
 });
