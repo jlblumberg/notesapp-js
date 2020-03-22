@@ -7,11 +7,11 @@ Notes app challenge - original README [here](https://github.com/makersacademy/co
 
 ## <a name="Outline">Outline</a>
 
-Build a notes app in pairs
+Build a single page web app using JavaScript.
 
 ## <a name="Specifications">Specifications</a>
 
-Build a single page web app using JavaScript.
+Build a notes app in which users can make new notes and view existing notes.
 
 ## <a name="User_Stories">User Stories</a>
 
@@ -36,7 +36,11 @@ So I can see all the information in the note
 ## <a name="Installation_Instructions">Installation Instructions</a>
 
 ### Prerequisite setup:
-- Install node and npm
+- Clone this repo to your local machine and cd into it
+- Run the command `gem install bundle` (if you don't have bundler already)
+- If you don't have homebrew installed, install it. [Instructions here](https://github.com/Homebrew/install)
+- Install node with the command `brew install node`
+- Install the project's dependencies with `npm install`
 
 ### Running the site
 - Run the server with `node node_modules/http-server/bin/http-server -c-1 -p 9292`
@@ -47,11 +51,9 @@ So I can see all the information in the note
 
 ## <a name="Tech_stack">Tech stack</a>
 
-Front-end:
 - HTML & CSS
 - JavaScript
-
-Testing:
+- NodeJS
 - Custom built testing library
 
 ## <a name="Future_work">Future work</a>
